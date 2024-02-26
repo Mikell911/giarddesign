@@ -1,0 +1,14 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Variable
+@import "variable/color.scss";
+@import "variable/font.scss";
+
+//reset
+@import "global/reset.scss";
+
+//Global
+@import "global/global.scss";
+
+//Components
+@import "components/index.scss";

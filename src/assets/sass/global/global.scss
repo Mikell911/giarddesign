@@ -1,0 +1,105 @@
+//global style
+html {
+  font-size: 1px;
+}
+.container {
+  max-width: 1287rem;
+  padding: 0 10rem;
+}
+body {
+  font: $body-text;
+  color: $black;
+}
+.h1 {
+  font: $h1-font;
+}
+.h2 {
+  font: $h2-font;
+  margin-top: 12rem;
+}
+.h3 {
+  font: $h3-font;
+}
+.sub-title {
+  font: $sub-title;
+}
+.section-title {
+  margin-top: 16rem;
+}
+.link {
+  padding: 12rem 24rem;
+  border-radius: 200rem;
+  text-align: center;
+  color: $--green;
+  font: $link-font;
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 20rem -3rem rgba(0,0,0,0.7);
+  }
+}
+.--bg-green {
+  background-color: $--green;
+  color: $--grey;
+}
+.--br-green {
+  border: 1rem solid $--green;
+  color: $--green;
+}
+.--bg-grey {
+  background-color: $--grey;
+}
+.--italic {
+  font: $title-italic;
+  font-style: italic;
+}
+.br {
+  display: block;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+@include media-breakpoint-down(lg) {
+  body {
+    font: 400 14rem/18rem 'Inter', sans-serif;
+  }
+  .sub-title {
+    text-align: center;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .h1 {
+    font: 500 40rem/50rem "Montserrat", sans-serif;
+  }
+  .h2 {
+    font: 500 38rem/45rem "Montserrat", sans-serif;
+  }
+  .h3 {
+    font: 500 25rem/32rem "Montserrat", sans-serif;
+  }
+  .text {
+    text-align: center;
+  }
+  .link {
+    padding: 10rem 12rem;
+    font: 400 14rem/20rem "Inter", sans-serif;;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  body {
+    font: 400 12rem/16rem 'Inter', sans-serif;
+  }
+  .h1 {
+    font: 500 30rem/35rem "Montserrat", sans-serif;
+  }
+  .section-title {
+    font: 400 26rem/32rem "Montserrat", sans-serif;;
+  }
+  .--italic {
+    font: 400 26rem/32rem "Inter", sans-serif;
+  }
+}

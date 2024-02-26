@@ -1,0 +1,54 @@
+//section fifth
+.fifth {
+  padding: 60rem 0;
+
+  &__description {
+    padding: 120rem 110rem;
+    background-color: $--green;
+    color: $--grey;
+  }
+  &__title {
+    max-width: 600rem;
+    font-size: 40rem;
+    letter-spacing: -2px;
+  }
+  &__sub-title {
+    letter-spacing: 1rem;
+    font-weight: 500;
+    font-size: 40rem;
+  }
+
+  &__link {
+    margin-top: 24rem;
+    letter-spacing: -0.16px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .fifth {
+    padding: 40rem 0;
+
+    &__description {
+      padding: 60rem 55rem;
+    }
+    &__title {
+      font-size: 26rem;
+      letter-spacing: 0;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__sub-title {
+      font-size: 32rem;
+    }
+    &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__link {
+      margin-top: 12rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+//Montserrat 500 + 500 italic:
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+//Inter 400 + 500
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+// main-fonts:
+$inter-font: 'Inter', sans-serif;
+$montserrat-font: 'Montserrat', sans-serif;
+
+//fonts:
+$nav-font: 400 14rem/21rem $inter-font;
+$h1-font: 500 60rem/70rem $montserrat-font;
+$h2-font: 500 48rem/55rem $montserrat-font;
+$h3-font: 500 28rem/32rem $montserrat-font;
+$title-italic: 500 48rem/55rem $inter-font;
+$sub-title: 400 12rem/18rem $inter-font;
+$body-text: 400 16rem/24rem $inter-font;
+$body-small: 400 14rem/21rem $inter-font;
+$link-font: 400 16rem/24rem $inter-font;
+$fifth-title: 400 40rem/48rem $montserrat-font;

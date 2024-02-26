@@ -1,0 +1,92 @@
+//second section
+.second {
+  padding: 120rem 10rem 160rem;
+  background-color: $--grey;
+
+  &__border {
+    height: 31rem;
+    background-color: #D9D9D9;
+  }
+  &__line {
+    margin: 96rem auto;
+    height: 2rem;
+    background-color: #D9D9D9;
+    max-width: 761rem;
+  }
+
+  &__sub-title {
+    color: $--green;
+  }
+  &__text {
+    margin-top: 32rem;
+    max-width: 710rem;
+    letter-spacing: -0.16px;
+  }
+
+  &__row {
+    margin-top: 96rem;
+    gap: 64rem;
+    justify-content: center;
+  }
+  &__cart-description {
+    margin-top: 35rem;
+  }
+  &__card {
+    padding: 48rem 40rem;
+    border-radius: 28rem;
+    background-color: $--white;
+    max-width: 370rem;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 20rem -3rem rgba(0,0,0,0.7);
+      transition: all .5s;
+    }
+  }
+  &__card-img{
+    max-width: 40rem;
+  }
+  &__card-title {
+    margin-top: 34rem;
+  }
+  &__card-text {
+    font: $body-small;
+    margin-top: 12rem;
+  }
+  &__card-link {
+    display: block;
+    margin-top: 63rem;
+  }
+}
+
+
+@include media-breakpoint-down(lg) {
+  .second {
+    padding: 40rem 0;
+    &__line {
+      margin: 48rem auto;
+    }
+    &__description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__row {
+      gap: 24rem;
+      margin-top: 48rem;
+    }
+    &__card {
+      padding: 32rem;
+    }
+    &__card-title {
+      margin-top: 17rem;
+    }
+    &__card-text {
+      font: 400 12rem/18rem "Inter", sans-serif;
+    }
+    &__card-link {
+      margin-top: 23rem;
+    }
+  }
+}
